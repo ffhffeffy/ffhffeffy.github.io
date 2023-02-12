@@ -1,10 +1,18 @@
 body {
     font-family: 'Playfair Display', serif;
-    background: blueviolet
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #64718f;
 }
 
 .container {
-    background: pink;
+    background: #BF7E78;
+    margin: 20px;
+    padding: 20px 40px;
+    line-height: 28px;
+}
+
+.container2 {
+    margin: 20px;
     padding: 20px 40px;
     line-height: 28px;
 }
@@ -16,13 +24,24 @@ h1 {
 }
 
 p {
+    font-size: 'Source Sans Pro', sans-serif;
     width: 70%;
+    margin-left: 5px;
 }
 
 .pullquote {
     font-family: 'Playfair Display', serif;
-    color: #d3d3d3;
+    color: #F2E4DC;
     font-size: 32px;
+    font-style: italic;
+    line-height: 48px;
+    width: 100%;
+}
+
+.pullquote2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #BCC5CE;
     font-style: italic;
     line-height: 48px;
     width: 100%;
