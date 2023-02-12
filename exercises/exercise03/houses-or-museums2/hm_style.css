@@ -4,6 +4,10 @@ body {
     background: #64718f;
 }
 
+nav {
+    margin: 20px;
+}
+
 .container {
     background: #BF7E78;
     margin: 20px;
