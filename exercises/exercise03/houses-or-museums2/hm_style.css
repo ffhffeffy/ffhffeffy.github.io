@@ -1,0 +1,29 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background: blueviolet
+}
+
+.container {
+    background: pink;
+    padding: 20px 40px;
+    line-height: 28px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+p {
+    width: 70%;
+}
+
+.pullquote {
+    font-family: 'Playfair Display', serif;
+    color: #d3d3d3;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 48px;
+    width: 100%;
+}

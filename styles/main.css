@@ -1,0 +1,30 @@
+body {
+    margin: 40px;
+    margin-top: 50px;
+    border: 2px solid black;
+    display: flex;
+    align-items: flex-start;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    margin: 80px;
+    margin-right: 40px;
+}
+
+.right {
+    margin-top: 40px;
+    margin-right: 80px;
+}
+
+h2 {
+    color: brown;
+}
+
+img {
+    width: 80%;
+    height: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
