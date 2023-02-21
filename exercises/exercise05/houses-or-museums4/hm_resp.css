@@ -26,12 +26,12 @@ header,
 footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: #4D5656;
+    color: #404949;
     line-height: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 20px;
     background-color: white;
-    text-indent: 20px;
 }
 
 nav {
