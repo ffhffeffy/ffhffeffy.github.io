@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #D5DBDB;
+    min-height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header,
+footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    text-indent: 20px;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+main {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+
+.column-wrapper {
+    display: flex;
+}
+
+.column-left,
+.column-right {
+    display: flex;
+}
+
+.column {
+    padding: 20px;
+    height: 100%;
+    width: 50%;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 24px;
+}
+
+.p2 {
+    color: #6b6b6b
+}
+
+.pullquote {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #db7a7a;
+    font-size: 28px;
+    font-style: italic;
+    line-height: 38px;
+}
+
+.pullquote2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #dd9c9c;
+    font-size: 28px;
+    font-style: italic;
+    line-height: 38px;
+}
