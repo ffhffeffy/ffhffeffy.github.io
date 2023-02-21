@@ -26,6 +26,7 @@ header,
 footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    color: #4D5656;
     line-height: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -97,6 +98,12 @@ p {
 }
 
 @media (max-width: 960px) {
+
+    header,
+    footer {
+        color: #1d2d3e;
+    }
+
     .flex-container {
         background-color: #c6d0d9;
     }
@@ -122,13 +129,24 @@ p {
 }
 
 @media (max-width: 450px) {
+
+    header,
+    footer {
+        color: #4A235A;
+    }
+
     .flex-container {
-        background-color: #cec2d4;
+        background-color: #d6ceda;
     }
 
     main {
         display: flex;
         flex-direction: column;
+    }
+
+    img {
+        height: 360px;
+        object-position: 50% 50%;
     }
 
     .column-wrapper {
@@ -140,14 +158,10 @@ p {
     .column-right {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .column {
         width: 100%;
-    }
-
-    img {
-        height: 380px;
-        object-position: 50% 50%;
     }
 }
