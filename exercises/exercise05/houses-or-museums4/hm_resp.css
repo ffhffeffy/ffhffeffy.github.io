@@ -12,7 +12,6 @@ body {
 body {
     font-family: 'Raleway', sans-serif;
     font-family: 'Ubuntu', sans-serif;
-    background-color: #D5DBDB;
     min-height: 100vh;
 }
 
@@ -20,6 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background-color: #c8d7d7;
 }
 
 header,
@@ -94,4 +94,60 @@ p {
     font-size: 28px;
     font-style: italic;
     line-height: 38px;
+}
+
+@media (max-width: 960px) {
+    .flex-container {
+        background-color: #c6d0d9;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-wrapper {
+        display: flex;
+    }
+
+    .column-left,
+    .column-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .flex-container {
+        background-color: #cec2d4;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-left,
+    .column-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    img {
+        height: 380px;
+        object-position: 50% 50%;
+    }
 }
