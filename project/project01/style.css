@@ -149,3 +149,14 @@ ul {
     padding-top: 60px;
     padding-left: 30px;
 }
+
+a:hover {
+    animation: colors 20s ease-in;
+}
+
+
+@keyframes colors {
+    0% {
+        color: #5db8b5;
+    }
+}
