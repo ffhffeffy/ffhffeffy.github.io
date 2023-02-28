@@ -16,7 +16,7 @@ h1 {
     font-family: 'Tilt Prism', cursive;
     text-align: center;
     padding: 10px 0px;
-    font-size: 48px;
+    font-size: 300%;
 }
 
 p {
@@ -33,6 +33,8 @@ h2 {
 
 h3 {
     font-family: 'Playfair Display', serif;
+    padding: 20px;
+    padding-left: 0;
 }
 
 h5 {
@@ -42,7 +44,7 @@ h5 {
     font-size: 14px;
 }
 
-a {
+.link {
     text-decoration: none;
     color: rgb(62, 62, 62);
 }
@@ -63,6 +65,16 @@ dt {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
+}
+
+.home {
+    color: white;
+    position: absolute;
+    z-index: 9;
+    text-decoration: none;
+    padding: 20px;
+
 }
 
 .content {
@@ -71,36 +83,41 @@ dt {
     flex-direction: row;
     padding: 10px;
     padding-bottom: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .left {
     width: 20%;
     padding: 10px;
     border-right: 1px solid black;
-    height: 100%;
+    min-height: 100%;
 }
 
 .right {
     width: 80%;
     padding: 20px;
-    height: 100%;
+    min-height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .navigation {
     background-color: transparent;
-    z-index: 9;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
 }
 
 .project {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     padding: 30px;
-    height: 100vh;
-    overflow: auto;
-    scrollbar-width: none;
-
+    padding-top: 40px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow-y: scroll;
 }
 
 ul {
@@ -112,10 +129,9 @@ ul {
     padding: 20px;
 }
 
-
-
 .project-s {
     display: flex;
+    padding: 20px;
 }
 
 .proimg-left {
@@ -124,6 +140,12 @@ ul {
     width: 70%;
 }
 
+.images {
+    padding-bottom: 20px;
+}
+
 .protext-right {
     width: 30%;
+    padding-top: 60px;
+    padding-left: 30px;
 }
