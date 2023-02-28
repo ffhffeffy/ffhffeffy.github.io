@@ -5,9 +5,41 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Titillium Web', sans-serif;
     overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Tilt Prism', cursive;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 48px;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+}
+
+h5 {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(62, 62, 62);
 }
 
 .flex-container {
@@ -28,5 +60,16 @@ dt {
 }
 
 .content {
-    background-color: rgb(255, 255, 255);
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: black;
+}
+
+.left {
+    background-color: whitesmoke;
+    width: 20%;
+    padding: 10px;
+    border-right: 1px solid black;
 }
