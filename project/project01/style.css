@@ -65,11 +65,30 @@ dt {
     flex-direction: row;
     padding: 10px;
     color: black;
+    min-height: 100vh;
 }
 
 .left {
-    background-color: whitesmoke;
     width: 20%;
     padding: 10px;
     border-right: 1px solid black;
+}
+
+.right {
+    width: 80%;
+    padding: 20px;
+}
+
+.navigation {
+    background-color: transparent;
+    position: relative;
+}
+
+ul {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 20px;
 }
