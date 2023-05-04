@@ -37,6 +37,12 @@ a {
     color: white;
 }
 
+.back {
+    color: black;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
 li {
     padding: 0 40px;
 }
