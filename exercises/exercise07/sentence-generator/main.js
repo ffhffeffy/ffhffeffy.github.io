@@ -20,8 +20,8 @@ function generatePoem(n) {
     let randomAdjectives = selectRandomElement(adjectives);
 
     for (let i = 1; i < n; i++) {
-        console.log(i * 1000)
-        setTimeout(generatePoem, i * 1000)
+        console.log(i * 600)
+        setTimeout(generatePoem, i * 600)
     }
 
     //grab the container element on the web page
@@ -39,13 +39,13 @@ function generatePoem(n) {
 
 //clear previous poem when click botton agian
 function clearPoem() {
-    document.querySelector('p').innerHTML = "";
-    // const container = document.querySelector('.container')
-    // const paragraph = document.querySelector('p');
-    // container.removeChild(paragraph);
+    // document.querySelector('p').innerHTML = "";
+    const container = document.querySelector('.container')
+    const paragraphs = container.querySelectorAll('p');
+    paragraphs.forEach(p => container.removeChild(p));
 }
 
-function generateAndClearPoem() {
+function clearAndGeneratePoem() {
     clearPoem(); // clear the previously generated poem
     generatePoem(5); // generate a new poem
 }
@@ -60,7 +60,7 @@ btn.addEventListener("click", function () {
         generatePoem(5);
     }
     if (clickCount > 1) {
-        generateAndClearPoem(); // call the function on the second click
+        clearAndGeneratePoem(); // call the function on the second click
     }
     else { };
 });
