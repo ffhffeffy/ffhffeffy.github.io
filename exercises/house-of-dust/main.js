@@ -1,41 +1,70 @@
-let array_one = [
-    "a house of wood",
-    "a house of brick",
-    "a house of broken dishes",
-    "a house of discarded clothing",
-    "a house of dust"
+console.log("This code is loading the JavaScript file");
+
+let materials = ["wood", "brick", "broken dishes", "dust", "leaves", "grass"];
+
+let places = [
+    "cold, windy climate",
+    "desert",
+    "deserted airport",
+    "deserted church",
+    "deserted factory",
+    "hot climate",
+    "metropolis"
 ];
 
-let array_two = [
-    "among other houses",
-    "among small hills",
-    "among high montains",
-    "by a river",
-    "by an abandoned lake"
+let peoples = [
+    "collectors of all types",
+    "fishermen and families",
+    "french and german speaking people",
+    "old friends",
+    "horses and birds",
+    "little boys",
+    "lovers"
 ];
 
-// let randomElement = arrayName[Math.floor(Math.random()*arrayName.length)];
+let things = [
+    "natural light",
+    "all available lighting",
+    "candles",
+    "electricity"
+];
 
-function renderPoem() {
-    // select random element from array 01
-    let elementFromArrayOne = array_one[Math.floor(Math.random() * array_one.length)];
+// select a random element from each array
+// write a function generatePoem() render this randomised text to the page
+// have this function run on window load
 
-    // select random element from array 02
-    let elementFromArrayTwo = array_two[Math.floor(Math.random() * array_two.length)];
-
-    //use querrySelect to grab the div with a class of poem
-    let poem = document.querySelector('.poem')
-
-    //create a new element...paragraph tag
-
-    //add the text attribute
-
-    //add class attribute
-
-    //elementFromArrayOne + " " + elementFromArrayTwo
-
-    //append that paragraph to the div with a class of poem
+function selectRandomElement(array) {
+    let randomizer = array[Math.floor(Math.random() * array.length)];
+    return randomizer;
 }
 
-let btn = document.querySelector("button");
-btn.addEventListener("click", renderPoem);
+function generatePoem(n) {
+    // select a random element from each array
+    let randomMaterial = selectRandomElement(materials);
+    let randomPlace = selectRandomElement(places);
+    let randomPeople = selectRandomElement(peoples);
+    let randomThing = selectRandomElement(things);
+
+    for (let i = 0; i < n; i++) {
+        console.log(i * 1000)
+        setTimeout(generatePoem, i * 1000)
+    }
+
+    //grab the container element on the web page
+    const container = document.querySelector('.container')
+
+    //create a new paragraph element
+    const paragraph = document.createElement('p');
+
+    //construct out sentence
+    paragraph.textContent = `A house of ${randomMaterial} \n in a ${randomPlace} \n using ${randomThing} \n inhabited by ${randomPeople}`
+
+    //append the paragraph to the page
+    container.appendChild(paragraph);
+}
+
+
+//call or evoke the function
+window.addEventListener('load', function () {
+    generatePoem(8)
+})
