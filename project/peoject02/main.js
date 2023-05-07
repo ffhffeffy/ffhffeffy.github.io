@@ -66,18 +66,129 @@ const flowers = [
     },
     {
         artist: "Yunfei Zhang",
-        shape: "",
-        color: "yellow",
-        image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/800px-Sunflower_sky_backdrop.jpg"
+        shape: "bottle",
+        color: "cold",
+        info: "Vessel of the Body, 2022\n48.0 x 18.0 x 18.0 cm\nHigh white mud, copper glaze",
+        image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle01.jpg"
+    },
+    {
+        artist: "Yunfei Zhang",
+        shape: "bottle",
+        color: "cold",
+        info: "Vase, 2023\nN/A\nHigh white mud, copper glaze",
+        image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle02.jpg"
+    },
+    {
+        artist: "Yunfei Zhang",
+        shape: "bottle",
+        color: "cold",
+        info: "N/A, 2022\n27.0 x 18.0 x43.0 cm\nHigh white mud, bluish white glaze",
+        image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle03.jpg"
+    },
+    {
+        artist: "Yunfei Zhang",
+        shape: "bottle",
+        color: "cold",
+        info: "Lady's Flower Basket, 2021\n15.0 x 15.0 x 50.0 cm\nHigh white mud, blue glaze",
+        image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle04.jpg"
+    },
+    {
+        artist: "Yunfei Zhang",
+        shape: "bottle",
+        color: "cold",
+        info: "N/A, 2021\n48.0 x 18.0 x 20.0 cm\nHigh white mud, bluish white glaze",
+        image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle05.jpg"
+    },
+    {
+        artist: "Yunfei Zhang",
+        shape: "bottle",
+        color: "cold",
+        info: "N/A, 2021\n23.0 x 23.0 x 43.0 cm\nHigh white mud, bluish white glaze",
+        image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle06.jpg"
+    },
+    {
+        artist: "Yunfei Zhang",
+        shape: "cup&plate",
+        color: "cold",
+        info: "Coffee Pot, 2022\nN/A\nN/A",
+        image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_cup01.jpg"
+    },
+    {
+        artist: "Yunfei Zhang",
+        shape: "cup&plate",
+        color: "cold",
+        info: "Mugs and plates, 2023\nN/A\nN/A",
+        image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_cup02.jpg"
+    },
+    {
+        artist: "Yunfei Zhang",
+        shape: "bowl&pot",
+        color: "cold",
+        info: "N/A, 2023\nN/A\nHigh white mud, High white mud, copper glaze",
+        image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_pot07.jpg"
     },
     {
         artist: "Zheyuan Feng",
-        shape: "",
-        color: "blue",
-        image:
-            "https://upload.wikimedia.org/wikipedia/commons/a/a8/Hyacinthoides_non-scripta_%28Common_Bluebell%29.jpg"
+        shape: "bottle",
+        color: "mix",
+        info: "ZhuoSe Series, Flower Vessel01\nN/A\nN/A",
+        image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_mix_bottle01.jpg"
     },
-
+    {
+        artist: "Zheyuan Feng",
+        shape: "bottle",
+        color: "mix",
+        info: "ZhuoSe Series, Flower Vessel02\nN/A\nN/A",
+        image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_mix_bottle08.jpg"
+    },
+    {
+        artist: "Zheyuan Feng",
+        shape: "cup&plate",
+        color: "mix",
+        info: "Patches Series, Tea Pot\nN/A\nN/A",
+        image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_mix_cup01.jpg"
+    },
+    {
+        artist: "Zheyuan Feng",
+        shape: "bottle",
+        color: "warm",
+        info: "ZhuoSe Series, Flower Vessel03\nN/A\nN/A",
+        image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_bottle04.jpg"
+    },
+    {
+        artist: "Zheyuan Feng",
+        shape: "bottle",
+        color: "warm",
+        info: "ZhuoSe Series, Flower Vessel04\nN/A\nN/A",
+        image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_bottle05.jpg"
+    },
+    {
+        artist: "Zheyuan Feng",
+        shape: "bottle",
+        color: "warm",
+        info: "ZhuoSe Series, Flower Vessel05\nN/A\nN/A",
+        image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_bottle06.jpg"
+    },
+    {
+        artist: "Zheyuan Feng",
+        shape: "bottle",
+        color: "warm",
+        info: "Patches Series, Flower Vessel\nN/A\nN/A",
+        image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_bottle07.jpg"
+    },
+    {
+        artist: "Zheyuan Feng",
+        shape: "bowl&pot",
+        color: "warm",
+        info: "ZhuoSe Series, Flower Vessel06\nN/A\nN/A",
+        image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_pot02.jpg"
+    },
+    {
+        artist: "Zheyuan Feng",
+        shape: "bowl&pot",
+        color: "warm",
+        info: "ZhuoSe Series, Flower Vessel07\nN/A\nN/A",
+        image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_pot03.jpg"
+    },
 ];
 
