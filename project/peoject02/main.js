@@ -1,6 +1,7 @@
 console.log('this works')
 
-const flowers = [
+// Dataset
+const ceramics = [
     {
         artist: "Gareth Mason",
         shape: "bottle",
@@ -192,3 +193,115 @@ const flowers = [
     },
 ];
 
+// Render ceramics to page
+
+const imageBox = document.querySelector(".image-box");
+
+function renderCeramicsToPage(ceramics) {
+    for (let i = 0; i < ceramics.length; i++) {
+        let list_item = document.createElement("div");
+        // list_item.classList.add(ceramics[i].color, "card");
+        list_item.style.position = "relative";
+        // ad id
+        list_item.setAttribute('id', `ceramics-${i}`)
+        // add the draggable attribute
+        list_item.setAttribute('draggable', true);
+        list_item.setAttribute('data-item', i);
+        // add artist
+        let artist = document.createElement("h5");
+        artist.textContent = ceramics[i].artist;
+        // add shape
+        let shape = document.createElement("p");
+        shape.textContent = ceramics[i].shape;
+        // add color
+        let color = document.createElement("p");
+        // color.classList.add(ceramics[i].color);
+        color.textContent = ceramics[i].color;
+        // add info
+        let info = document.createElement("p");
+        info.textContent = ceramics[i].info;
+        // add image
+        let image = document.createElement("img");
+        image.setAttribute("src", ceramics[i].image);
+
+        // append created elements to page
+        imageBox.appendChild(list_item);
+        list_item.appendChild(image);
+    }
+}
+renderCeramicsToPage(ceramics);
+
+const images = imageBox.querySelectorAll('img');
+
+images.forEach((img) => {
+    const containerRect = imageBox.getBoundingClientRect();
+    const containerLeft = containerRect.left;
+    const containerTop = containerRect.top;
+    const containerRight = containerLeft + imageBox.offsetWidth;
+    const containerBottom = containerTop + imageBox.offsetHeight;
+
+    // make the images within the window view.
+    const maxHeight = window.innerHeight - imageBox.offsetHeight;
+    const maxWidth = window.innerWidth - img.offsetWidth;
+    const maxTop = Math.min(maxHeight, containerBottom - img.offsetHeight);
+    const maxLeft = Math.min(maxWidth, containerRight - img.offsetWidth);
+
+    // give images random left and top
+    const left = Math.max(containerLeft, Math.min(maxLeft, containerLeft + Math.floor(Math.random() * (imageBox.offsetWidth - 300))));
+    const top = Math.max(containerTop, Math.min(maxTop, containerTop + Math.floor(Math.random() * imageBox.offsetHeight)));
+
+    // set the location of the images
+    img.style.position = 'absolute';
+    img.style.left = left + 'px';
+    img.style.top = top + 'px';
+
+    // drag and drop the images
+    let dragging = false;
+    let zIndex = 1;
+
+    img.addEventListener('dragstart', (event) => {
+        if (!dragging) {
+
+            img.style.zIndex = zIndex + 1;
+            zIndex = img.style.zIndex;
+
+            // calculate the mouse's location
+            const startX = event.clientX;
+            const startY = event.clientY;
+            const imgLeft = img.offsetLeft;
+            const imgTop = img.offsetTop;
+            const offsetX = startX - imgLeft;
+            const offsetY = startY - imgTop;
+
+
+            function moveHandler(event) {
+                // calculate the mouse's new location
+                const newLeft = event.clientX - offsetX;
+                const newTop = event.clientY - offsetY;
+
+                // make the image within the container
+                img.style.left = Math.max(containerLeft, Math.min(containerRight - img.offsetWidth, newLeft)) + 'px';
+                img.style.top = Math.max(containerTop, Math.min(containerBottom - img.offsetHeight, newTop)) + 'px';
+
+                dragging = true;
+            }
+
+            document.addEventListener('mousemove', moveHandler);
+
+            function upHandler(event) {
+                // reset the zindex after drag
+                img.style.zIndex = zIndex;
+                // remove the eventlistener
+                document.removeEventListener('mousemove', moveHandler);
+                document.removeEventListener('mouseup', upHandler);
+            }
+
+            document.addEventListener('mouseup', upHandler);
+        } else {
+            // reset the zindex after drag
+            img.style.zIndex = zIndex;
+            // reset dragging
+            dragging = false;
+        }
+    });
+})

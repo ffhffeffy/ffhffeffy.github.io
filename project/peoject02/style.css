@@ -10,3 +10,31 @@ body {
     background-image: url("images/gradient background.jpg");
     background-size: cover;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.heading {
+    height: 20%;
+    width: 100%;
+}
+
+.image-box {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+img {
+    width: 200px;
+    transition: z-index 0.5s ease-out;
+    /* smooth transition effect */
+}
+
+img:hover {
+    z-index: 30;
+}
