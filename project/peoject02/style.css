@@ -17,11 +17,12 @@ body {
     display: flex;
     flex-direction: column;
     max-height: 100vh;
+    padding: 20px;
 }
 
 .heading {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 40%;
     width: 100%;
 }
@@ -30,6 +31,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 100%;
+    align-items: center;
 
 }
 
@@ -37,25 +39,51 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-right: 30px;
+}
+
+button {
+    color: #0a2c38;
+    background-color: transparent;
+    border: none;
 }
 
 .filter-btn {
     /* display: block; */
     color: #0a2c38;
-    background-color: transparent;
-
     height: 20px;
     text-align: left;
-    border: none;
     align-items: flex-start;
     position: relative;
     border-bottom: 1px solid transparent;
-
+    padding-top: 5px;
 }
 
-h5 {
-    padding-bottom: 10px;
-    padding-left: 6px;
+button.home {
+    border: 1px solid #0a2c38;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.instruction {
+    font-size: 24px;
+    color: #0a2c38;
+}
+
+h3 {
+    border: 1px solid #0a2c38;
+    text-align: center;
+    font-weight: 400;
+    font-size: medium;
+}
+
+h4 {
+    padding-right: 30px;
 }
 
 .image-box {
