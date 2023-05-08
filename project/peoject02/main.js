@@ -211,22 +211,35 @@ function renderCeramicsToPage(ceramics) {
         // add artist
         let artist = document.createElement("h5");
         artist.textContent = ceramics[i].artist;
+        artist.classList.add(ceramics[i].artist)
+        list_item.appendChild(artist);
+        artist.style.display = "none";
+
         // add shape
         let shape = document.createElement("p");
         shape.textContent = ceramics[i].shape;
+        shape.classList.add(ceramics[i].shape)
+        list_item.appendChild(shape);
+        shape.style.display = "none";
+
         // add color
         let color = document.createElement("p");
-        // color.classList.add(ceramics[i].color);
         color.textContent = ceramics[i].color;
+        color.classList.add(ceramics[i].color)
+        list_item.appendChild(color);
+        color.style.display = "none";
+
         // add info
         let info = document.createElement("p");
         info.textContent = ceramics[i].info;
         // list_item.appendChild(info);
+
         // add image
         let image = document.createElement("img");
         image.setAttribute("src", ceramics[i].image);
         list_item.appendChild(image);
-        image.setAttribute("title", ceramics[i].info); // set the title attribute
+        image.setAttribute("title", ceramics[i].info);
+        // set the title attribute
 
         image.addEventListener('mouseover', (event) => {
             let tooltip = document.createElement("div");
@@ -256,21 +269,6 @@ function renderCeramicsToPage(ceramics) {
         });
 
         imageBox.appendChild(list_item);
-
-        // if (ceramics[i].artist !== "No") {
-
-        //     list_item.appendChild(artist)
-        // }
-
-        // if (ceramics[i].shape !== "No") {
-
-        //     list_item.appendChild(shape)
-        // }
-
-        // if (ceramics[i].color !== "No") {
-
-        //     list_item.appendChild(color)
-        // }
     }
 }
 renderCeramicsToPage(ceramics);
@@ -349,57 +347,26 @@ images.forEach((img) => {
     })
 });
 
+
 // Filter the ceramics by button
 let filterBtns = document.querySelector(".filters");
-
 let moveBox = document.querySelectorAll(".move-box");
-
-function showlabel(event) {
-    let activeBtns = filterBtns.querySelectorAll(".active");
-    let filterValues = [];
-    activeBtns.forEach((btn) => {
-        filterValues.push(btn.getAttribute("data-filter"));
-    });
-
-
-    let labels = document.querySelectorAll('.label .selectedlabel');
-
-    console.log(labels.length);
-
-    let counter = 0;
-    for (let i = 0; i < 9; i++) {
-
-        if (filterValues.includes(labels[i].getAttribute("data-filter"))) {
-
-            labels[i].style.display = 'inline';
-            console.log(labels[i].getAttribute("data-filter") + labels[i].style.display);
-            counter++;
-
-        } else {
-            labels[i].style.display = 'none';
-        }
-
-    }
-
-    console.log(counter);
-
-}
 
 function filterFn(event) {
     if (event.target.classList.contains("filter-btn")) {
-        // set to active
         event.target.classList.toggle("active");
 
-        // get the filter values
+        // select the current active button
         let activeBtns = filterBtns.querySelectorAll(".active");
         let filterValues = [];
         activeBtns.forEach((btn) => {
             filterValues.push(btn.getAttribute("data-filter"));
         });
 
+
         console.log(moveBox.length);
 
-        // go over the moveBox
+        // filter all the moveBox
         for (let i = 0; i < moveBox.length; i++) {
 
             if (
@@ -416,4 +383,35 @@ function filterFn(event) {
     }
 }
 filterBtns.addEventListener("click", filterFn);
-filterBtns.addEventListener("click", showlabel);
+
+// function showlabel(event) {
+//     let activeBtns = filterBtns.querySelectorAll(".active");
+//     let filterValues = [];
+//     activeBtns.forEach((btn) => {
+//         filterValues.push(btn.getAttribute("data-filter"));
+//     });
+
+
+//     let labels = document.querySelectorAll('.label .selectedlabel');
+
+//     console.log(labels.length);
+
+//     let counter = 0;
+//     for (let i = 0; i < 9; i++) {
+
+//         if (filterValues.includes(labels[i].getAttribute("data-filter"))) {
+
+//             labels[i].style.display = 'inline';
+//             console.log(labels[i].getAttribute("data-filter") + labels[i].style.display);
+//             counter++;
+
+//         } else {
+//             labels[i].style.display = 'none';
+//         }
+
+//     }
+
+//     console.log(counter);
+
+// }
+// filterBtns.addEventListener("click", showlabel);
