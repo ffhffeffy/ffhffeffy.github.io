@@ -259,49 +259,46 @@ images.forEach((img) => {
     let dragging = false;
     let zIndex = 1;
 
-    img.addEventListener('dragstart', (event) => {
-        if (!dragging) {
+    img.addEventListener('mousedown', (event) => {
+        event.preventDefault();
 
-            img.style.zIndex = zIndex + 1;
-            zIndex = img.style.zIndex;
+        // calculate the mouse's location
+        const startX = event.clientX;
+        const startY = event.clientY;
+        const imgLeft = img.offsetLeft;
+        const imgTop = img.offsetTop;
+        const offsetX = startX - imgLeft;
+        const offsetY = startY - imgTop;
 
-            // calculate the mouse's location
-            const startX = event.clientX;
-            const startY = event.clientY;
-            const imgLeft = img.offsetLeft;
-            const imgTop = img.offsetTop;
-            const offsetX = startX - imgLeft;
-            const offsetY = startY - imgTop;
+        function moveHandler(event) {
+            event.preventDefault();
 
+            // calculate the mouse's new location
+            const newLeft = event.clientX - offsetX;
+            const newTop = event.clientY - offsetY;
 
-            function moveHandler(event) {
-                // calculate the mouse's new location
-                const newLeft = event.clientX - offsetX;
-                const newTop = event.clientY - offsetY;
+            // set the new position of the image
+            img.style.left = newLeft + 'px';
+            img.style.top = newTop + 'px';
 
-                // make the image within the container
-                img.style.left = Math.max(containerLeft, Math.min(containerRight - img.offsetWidth, newLeft)) + 'px';
-                img.style.top = Math.max(containerTop, Math.min(containerBottom - img.offsetHeight, newTop)) + 'px';
+            dragging = true;
+        }
 
-                dragging = true;
-            }
+        document.addEventListener('mousemove', moveHandler);
 
-            document.addEventListener('mousemove', moveHandler);
-
-            function upHandler(event) {
+        // add the mouseup event listener outside the mousedown event listener
+        document.addEventListener('mouseup', () => {
+            if (dragging) {
                 // reset the zindex after drag
                 img.style.zIndex = zIndex;
-                // remove the eventlistener
-                document.removeEventListener('mousemove', moveHandler);
-                document.removeEventListener('mouseup', upHandler);
+                // reset dragging
+                dragging = false;
             }
+            // remove the eventlistener
+            document.removeEventListener('mousemove', moveHandler);
+        }, { once: true });
 
-            document.addEventListener('mouseup', upHandler);
-        } else {
-            // reset the zindex after drag
-            img.style.zIndex = zIndex;
-            // reset dragging
-            dragging = false;
-        }
-    });
-})
+        img.style.zIndex = zIndex + 1;
+        zIndex = img.style.zIndex;
+    })
+});
