@@ -125,7 +125,7 @@ const ceramics = [
         artist: "Yunfei Zhang",
         shape: "bowl&pot",
         color: "cold",
-        info: "N/A, 2023\nN/A\nHigh white mud, High white mud, copper glaze",
+        info: "N/A, 2023\nN/A\nHigh white mud,  copper glaze",
         image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_pot07.jpg"
     },
     {
@@ -234,11 +234,10 @@ function renderCeramicsToPage(ceramics) {
             tooltip.classList.add('tooltip');
             tooltip.style.position = "absolute";
             let imageRect = image.getBoundingClientRect();
-            tooltip.style.top = `${imageRect.top + imageRect.height + 10}px`;
-            tooltip.style.left = `${imageRect.left}px`;
-            tooltip.style.backgroundColor = "white";
-            tooltip.style.padding = "10px";
+            tooltip.style.top = `${imageRect.top + 10}px`;
+            tooltip.style.left = `${imageRect.left + imageRect.width + 1}px`;
             tooltip.textContent = ceramics[i].info;
+            tooltip.innerHTML = ceramics[i].info.replace(/\n/g, "<br>");
             document.body.appendChild(tooltip);
         });
 
