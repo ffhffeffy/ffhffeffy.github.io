@@ -238,7 +238,7 @@ function renderCeramicsToPage(ceramics) {
         let image = document.createElement("img");
         image.setAttribute("src", ceramics[i].image);
         list_item.appendChild(image);
-        image.setAttribute("title", ceramics[i].info);
+        // image.setAttribute("title", ceramics[i].info);
         // set the title attribute
 
         image.addEventListener('mouseover', (event) => {

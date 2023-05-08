@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: 'Ysabeau', sans-serif;
     overflow: hidden;
     height: 100vh;
     background-image: url("images/gradient background.jpg");
@@ -18,16 +19,43 @@ body {
     max-height: 100vh;
 }
 
-.filters {
-    display: flex;
-    flex-direction: row;
-}
-
 .heading {
     display: flex;
     flex-direction: row;
-    height: 20%;
+    height: 40%;
     width: 100%;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+}
+
+.filter-div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.filter-btn {
+    /* display: block; */
+    color: #0a2c38;
+    background-color: transparent;
+
+    height: 20px;
+    text-align: left;
+    border: none;
+    align-items: flex-start;
+    position: relative;
+    border-bottom: 1px solid transparent;
+
+}
+
+h5 {
+    padding-bottom: 10px;
+    padding-left: 6px;
 }
 
 .image-box {
@@ -48,8 +76,10 @@ img:hover {
 }
 
 .tooltip {
-    background: rgba(228, 236, 235, 0.6);
-    color: #0a2c38;
+    background: transparent;
+    color: #ec4a7a;
+    font-weight: 550;
+    font-size: 16px;
     padding: 5px;
     font-size: 12px;
 }
@@ -71,4 +101,54 @@ img:hover {
     100% {
         opacity: 1;
     }
+}
+
+.filter-btn.active {
+    text-decoration: underline;
+    color: black;
+    border-radius: 20px
+}
+
+.filter-btn.active::after {
+    content: 'x';
+    position: absolute;
+    top: 16px;
+    left: 96px;
+    font-size: 25px;
+    margin-left: 10px;
+    transform: translate(-50%, -50%);
+    font: weight 10px;
+    ;
+    color: black;
+
+}
+
+.selectedlabel {
+
+    width: auto;
+    height: auto;
+    border: none;
+    transition-timing-function: ease-in;
+    transition-delay: 0.02s;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    min-width: 8em;
+    height: auto;
+    padding: 0.7em;
+    background-color: #DBB825;
+    color: white;
+    border-radius: 24px;
+}
+
+
+.selectedlabel:hover {
+    background-color: black;
+    color: white;
+    border-radius: 24px;
+
 }
