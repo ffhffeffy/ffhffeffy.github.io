@@ -9,12 +9,12 @@ body {
     height: 100vh;
     background-image: url("images/gradient background.jpg");
     background-size: cover;
+    padding: 10px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
 
 .heading {
@@ -36,5 +36,5 @@ img {
 }
 
 img:hover {
-    z-index: 30;
+    z-index: 50;
 }

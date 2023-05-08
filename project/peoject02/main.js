@@ -200,16 +200,18 @@ const imageBox = document.querySelector(".image-box");
 function renderCeramicsToPage(ceramics) {
     for (let i = 0; i < ceramics.length; i++) {
         let list_item = document.createElement("div");
-        // list_item.classList.add(ceramics[i].color, "card");
+        list_item.classList.add("move-box");
         list_item.style.position = "relative";
         // ad id
         list_item.setAttribute('id', `ceramics-${i}`)
         // add the draggable attribute
         list_item.setAttribute('draggable', true);
         list_item.setAttribute('data-item', i);
+
         // add artist
         let artist = document.createElement("h5");
         artist.textContent = ceramics[i].artist;
+        // list_item.appendChild(artist);
         // add shape
         let shape = document.createElement("p");
         shape.textContent = ceramics[i].shape;
@@ -220,16 +222,17 @@ function renderCeramicsToPage(ceramics) {
         // add info
         let info = document.createElement("p");
         info.textContent = ceramics[i].info;
+        // list_item.appendChild(info);
         // add image
         let image = document.createElement("img");
         image.setAttribute("src", ceramics[i].image);
-
-        // append created elements to page
-        imageBox.appendChild(list_item);
         list_item.appendChild(image);
+
+        imageBox.appendChild(list_item);
     }
 }
 renderCeramicsToPage(ceramics);
+
 
 const images = imageBox.querySelectorAll('img');
 
@@ -254,6 +257,7 @@ images.forEach((img) => {
     img.style.position = 'absolute';
     img.style.left = left + 'px';
     img.style.top = top + 'px';
+
 
     // drag and drop the images
     let dragging = false;
