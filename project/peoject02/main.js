@@ -3,192 +3,192 @@ console.log('this works')
 // Dataset
 const ceramics = [
     {
-        artist: "Gareth Mason",
+        artist: "Gareth_Mason",
         shape: "bottle",
         color: "cold",
-        info: "O, 2016-2017\n13.8 x 7.1 x 6.7 in\nPorcelain, layered matte and celadon glazes",
+        info: "Gareth Mason\nO, 2016-2017\n13.8 x 7.1 x 6.7 in\nPorcelain, layered matte and celadon glazes",
         image: "images/ceramics/Gareth Mason/Gareth Mason_cold_bottle01.png"
     },
     {
-        artist: "Gareth Mason",
+        artist: "Gareth_Mason",
         shape: "bottle",
         color: "cold",
-        info: "Sharp Intake, 2008-2011\n16.9 x 11.0 x 8.7 in\nPorcelain, stoneware, layered glazes",
+        info: "Gareth Mason\nSharp Intake, 2008-2011\n16.9 x 11.0 x 8.7 in\nPorcelain, stoneware, layered glazes",
         image: "images/ceramics/Gareth Mason/Gareth Mason_cold_bottle02.png"
     },
     {
-        artist: "Gareth Mason",
+        artist: "Gareth_Mason",
         shape: "bottle",
         color: "cold",
-        info: "Buckle, 2017\n6.1 x 4.9 x 4.5 in\nPorcelain, fluid celadon glaze",
+        info: "Gareth Mason\nBuckle, 2017\n6.1 x 4.9 x 4.5 in\nPorcelain, fluid celadon glaze",
         image: "images/ceramics/Gareth Mason/Gareth Mason_cold_bottle03.png"
     },
     {
-        artist: "Gareth Mason",
+        artist: "Gareth_Mason",
         shape: "bowl&pot",
         color: "cold",
-        info: "Private Sensation, 2009-2013\n18.5 x 24.8 x 23.2 in\nPorcelain, copper, dolomite matte glaze",
+        info: "Gareth Mason\nPrivate Sensation, 2009-2013\n18.5 x 24.8 x 23.2 in\nPorcelain, copper, dolomite matte glaze",
         image: "images/ceramics/Gareth Mason/Gareth Mason_cold_bowl01.png"
     },
     {
-        artist: "Gareth Mason",
+        artist: "Gareth_Mason",
         shape: "bottle",
         color: "mix",
-        info: "A Gentle Collapsing, 2017-2018\n27.9 x 17.7 x 16.9 in\nStoneware, porcelain, glazes, 'wild' clay",
+        info: "Gareth Mason\nA Gentle Collapsing, 2017-2018\n27.9 x 17.7 x 16.9 in\nStoneware, porcelain, glazes, 'wild' clay",
         image: "images/ceramics/Gareth Mason/Gareth Mason_mix_bottle01.png"
     },
     {
-        artist: "Gareth Mason",
+        artist: "Gareth_Mason",
         shape: "bottle",
         color: "mix",
-        info: "Spike, 2019\n25.0 x 19.0 x 20.0 in\nPorcelain, stoneware, glazes",
+        info: "Gareth Mason\nSpike, 2019\n25.0 x 19.0 x 20.0 in\nPorcelain, stoneware, glazes",
         image: "images/ceramics/Gareth Mason/Gareth Mason_mix_bottle02.png"
     },
     {
-        artist: "Gareth Mason",
+        artist: "Gareth_Mason",
         shape: "bottle",
         color: "warm",
-        info: "Chance Encounter, 2016-2018\n13.4 x 9.8 x 9.5 in\nStoneware, porcelain, glazes",
+        info: "Gareth Mason\nChance Encounter, 2016-2018\n13.4 x 9.8 x 9.5 in\nStoneware, porcelain, glazes",
         image: "images/ceramics/Gareth Mason/Gareth Mason_warm_bottle01.png"
     },
     {
-        artist: "Gareth Mason",
+        artist: "Gareth_Mason",
         shape: "bottle",
         color: "warm",
-        info: "Ribbed Red, 2017\n8.1 x 5.1 x 2.0 in\nPorcelain, stoneware, copper red, layered glazes",
+        info: "Gareth Mason\nRibbed Red, 2017\n8.1 x 5.1 x 2.0 in\nPorcelain, stoneware, copper red, layered glazes",
         image: "images/ceramics/Gareth Mason/Gareth Mason_warm_bottle02.png"
     },
     {
-        artist: "Gareth Mason",
+        artist: "Gareth_Mason",
         shape: "bowl&pot",
         color: "warm",
-        info: "Warp, 2017\n5.9 x 13.6 x 11.0 in\nPorcelain, copper red glaze",
+        info: "Gareth Mason\nWarp, 2017\n5.9 x 13.6 x 11.0 in\nPorcelain, copper red glaze",
         image: "images/ceramics/Gareth Mason/Gareth Mason_warm_bowl01.png"
     },
     {
-        artist: "Yunfei Zhang",
+        artist: "Yunfei_Zhang",
         shape: "bottle",
         color: "cold",
-        info: "Vessel of the Body, 2022\n48.0 x 18.0 x 18.0 cm\nHigh white mud, copper glaze",
+        info: "Yunfei Zhang\nVessel of the Body, 2022\n48.0 x 18.0 x 18.0 cm\nHigh white mud, copper glaze",
         image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle01.jpg"
     },
     {
-        artist: "Yunfei Zhang",
+        artist: "Yunfei_Zhang",
         shape: "bottle",
         color: "cold",
-        info: "Vase, 2023\nN/A\nHigh white mud, copper glaze",
+        info: "Yunfei Zhang\nVase, 2023\nN/A\nHigh white mud, copper glaze",
         image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle02.jpg"
     },
     {
-        artist: "Yunfei Zhang",
+        artist: "Yunfei_Zhang",
         shape: "bottle",
         color: "cold",
-        info: "N/A, 2022\n27.0 x 18.0 x43.0 cm\nHigh white mud, bluish white glaze",
+        info: "Yunfei Zhang\nN/A, 2022\n27.0 x 18.0 x43.0 cm\nHigh white mud, bluish white glaze",
         image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle03.jpg"
     },
     {
-        artist: "Yunfei Zhang",
+        artist: "Yunfei_Zhang",
         shape: "bottle",
         color: "cold",
-        info: "Lady's Flower Basket, 2021\n15.0 x 15.0 x 50.0 cm\nHigh white mud, blue glaze",
+        info: "Yunfei Zhang\nLady's Flower Basket, 2021\n15.0 x 15.0 x 50.0 cm\nHigh white mud, blue glaze",
         image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle04.jpg"
     },
     {
-        artist: "Yunfei Zhang",
+        artist: "Yunfei_Zhang",
         shape: "bottle",
         color: "cold",
-        info: "N/A, 2021\n48.0 x 18.0 x 20.0 cm\nHigh white mud, bluish white glaze",
+        info: "Yunfei Zhang\nN/A, 2021\n48.0 x 18.0 x 20.0 cm\nHigh white mud, bluish white glaze",
         image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle05.jpg"
     },
     {
-        artist: "Yunfei Zhang",
+        artist: "Yunfei_Zhang",
         shape: "bottle",
         color: "cold",
-        info: "N/A, 2021\n23.0 x 23.0 x 43.0 cm\nHigh white mud, bluish white glaze",
+        info: "Yunfei Zhang\nN/A, 2021\n23.0 x 23.0 x 43.0 cm\nHigh white mud, bluish white glaze",
         image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_bottle06.jpg"
     },
     {
-        artist: "Yunfei Zhang",
+        artist: "Yunfei_Zhang",
         shape: "cup&plate",
         color: "cold",
-        info: "Coffee Pot, 2022\nN/A\nN/A",
+        info: "Yunfei Zhang\nCoffee Pot, 2022\nN/A\nN/A",
         image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_cup01.jpg"
     },
     {
-        artist: "Yunfei Zhang",
+        artist: "Yunfei_Zhang",
         shape: "cup&plate",
         color: "cold",
-        info: "Mugs and plates, 2023\nN/A\nN/A",
+        info: "Yunfei Zhang\nMugs and plates, 2023\nN/A\nN/A",
         image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_cup02.jpg"
     },
     {
-        artist: "Yunfei Zhang",
+        artist: "Yunfei_Zhang",
         shape: "bowl&pot",
         color: "cold",
-        info: "N/A, 2023\nN/A\nHigh white mud,  copper glaze",
+        info: "Yunfei Zhang\nN/A, 2023\nN/A\nHigh white mud,  copper glaze",
         image: "images/ceramics/Yunfei Zhang/Yunfei Zhang_cold_pot07.jpg"
     },
     {
-        artist: "Zheyuan Feng",
+        artist: "Zheyuan_Feng",
         shape: "bottle",
         color: "mix",
-        info: "ZhuoSe Series, Flower Vessel01\nN/A\nN/A",
+        info: "Zheyuan Feng\nZhuoSe Series, Flower Vessel01\nN/A\nN/A",
         image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_mix_bottle01.jpg"
     },
     {
-        artist: "Zheyuan Feng",
+        artist: "Zheyuan_Feng",
         shape: "bottle",
         color: "mix",
-        info: "ZhuoSe Series, Flower Vessel02\nN/A\nN/A",
+        info: "Zheyuan Feng\nZhuoSe Series, Flower Vessel02\nN/A\nN/A",
         image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_mix_bottle08.jpg"
     },
     {
-        artist: "Zheyuan Feng",
+        artist: "Zheyuan_Feng",
         shape: "cup&plate",
         color: "mix",
-        info: "Patches Series, Tea Pot\nN/A\nN/A",
+        info: "Zheyuan Feng\nPatches Series, Tea Pot\nN/A\nN/A",
         image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_mix_cup01.jpg"
     },
     {
-        artist: "Zheyuan Feng",
+        artist: "Zheyuan_Feng",
         shape: "bottle",
         color: "warm",
-        info: "ZhuoSe Series, Flower Vessel03\nN/A\nN/A",
+        info: "Zheyuan Feng\nZhuoSe Series, Flower Vessel03\nN/A\nN/A",
         image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_bottle04.jpg"
     },
     {
-        artist: "Zheyuan Feng",
+        artist: "Zheyuan_Feng",
         shape: "bottle",
         color: "warm",
-        info: "ZhuoSe Series, Flower Vessel04\nN/A\nN/A",
+        info: "Zheyuan Feng\nZhuoSe Series, Flower Vessel04\nN/A\nN/A",
         image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_bottle05.jpg"
     },
     {
-        artist: "Zheyuan Feng",
+        artist: "Zheyuan_Feng",
         shape: "bottle",
         color: "warm",
-        info: "ZhuoSe Series, Flower Vessel05\nN/A\nN/A",
+        info: "Zheyuan Feng\nZhuoSe Series, Flower Vessel05\nN/A\nN/A",
         image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_bottle06.jpg"
     },
     {
-        artist: "Zheyuan Feng",
+        artist: "Zheyuan_Feng",
         shape: "bottle",
         color: "warm",
-        info: "Patches Series, Flower Vessel\nN/A\nN/A",
+        info: "Zheyuan Feng\nPatches Series, Flower Vessel\nN/A\nN/A",
         image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_bottle07.jpg"
     },
     {
-        artist: "Zheyuan Feng",
+        artist: "Zheyuan_Feng",
         shape: "bowl&pot",
         color: "warm",
-        info: "ZhuoSe Series, Flower Vessel06\nN/A\nN/A",
+        info: "Zheyuan Feng\nZhuoSe Series, Flower Vessel06\nN/A\nN/A",
         image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_pot02.jpg"
     },
     {
-        artist: "Zheyuan Feng",
+        artist: "Zheyuan_Feng",
         shape: "bowl&pot",
         color: "warm",
-        info: "ZhuoSe Series, Flower Vessel07\nN/A\nN/A",
+        info: "Zheyuan Feng\nZhuoSe Series, Flower Vessel07\nN/A\nN/A",
         image: "images/ceramics/Zheyuan Feng/Zheyuan Feng_warm_pot03.jpg"
     },
 ];
@@ -200,7 +200,7 @@ const imageBox = document.querySelector(".image-box");
 function renderCeramicsToPage(ceramics) {
     for (let i = 0; i < ceramics.length; i++) {
         let list_item = document.createElement("div");
-        list_item.classList.add("move-box");
+        list_item.classList.add("move-box", ceramics[i].artist, ceramics[i].shape, ceramics[i].color);
         list_item.style.position = "relative";
         // ad id
         list_item.setAttribute('id', `ceramics-${i}`)
@@ -211,7 +211,6 @@ function renderCeramicsToPage(ceramics) {
         // add artist
         let artist = document.createElement("h5");
         artist.textContent = ceramics[i].artist;
-        // list_item.appendChild(artist);
         // add shape
         let shape = document.createElement("p");
         shape.textContent = ceramics[i].shape;
@@ -234,8 +233,8 @@ function renderCeramicsToPage(ceramics) {
             tooltip.classList.add('tooltip');
             tooltip.style.position = "absolute";
             let imageRect = image.getBoundingClientRect();
-            tooltip.style.top = `${imageRect.top + 10}px`;
-            tooltip.style.left = `${imageRect.left + imageRect.width + 1}px`;
+            tooltip.style.top = `${imageRect.top}px`;
+            tooltip.style.left = `${imageRect.left + imageRect.width}px`;
             tooltip.textContent = ceramics[i].info;
             tooltip.innerHTML = ceramics[i].info.replace(/\n/g, "<br>");
             document.body.appendChild(tooltip);
@@ -257,6 +256,21 @@ function renderCeramicsToPage(ceramics) {
         });
 
         imageBox.appendChild(list_item);
+
+        // if (ceramics[i].artist !== "No") {
+
+        //     list_item.appendChild(artist)
+        // }
+
+        // if (ceramics[i].shape !== "No") {
+
+        //     list_item.appendChild(shape)
+        // }
+
+        // if (ceramics[i].color !== "No") {
+
+        //     list_item.appendChild(color)
+        // }
     }
 }
 renderCeramicsToPage(ceramics);
@@ -334,3 +348,72 @@ images.forEach((img) => {
         zIndex = img.style.zIndex;
     })
 });
+
+// Filter the ceramics by button
+let filterBtns = document.querySelector(".filters");
+
+let moveBox = document.querySelectorAll(".move-box");
+
+function showlabel(event) {
+    let activeBtns = filterBtns.querySelectorAll(".active");
+    let filterValues = [];
+    activeBtns.forEach((btn) => {
+        filterValues.push(btn.getAttribute("data-filter"));
+    });
+
+
+    let labels = document.querySelectorAll('.label .selectedlabel');
+
+    console.log(labels.length);
+
+    let counter = 0;
+    for (let i = 0; i < 9; i++) {
+
+        if (filterValues.includes(labels[i].getAttribute("data-filter"))) {
+
+            labels[i].style.display = 'inline';
+            console.log(labels[i].getAttribute("data-filter") + labels[i].style.display);
+            counter++;
+
+        } else {
+            labels[i].style.display = 'none';
+        }
+
+    }
+
+    console.log(counter);
+
+}
+
+function filterFn(event) {
+    if (event.target.classList.contains("filter-btn")) {
+        // set to active
+        event.target.classList.toggle("active");
+
+        // get the filter values
+        let activeBtns = filterBtns.querySelectorAll(".active");
+        let filterValues = [];
+        activeBtns.forEach((btn) => {
+            filterValues.push(btn.getAttribute("data-filter"));
+        });
+
+        console.log(moveBox.length);
+
+        // go over the moveBox
+        for (let i = 0; i < moveBox.length; i++) {
+
+            if (
+                filterValues.every((value) => moveBox[i].classList.contains(value)) ||
+                filterValues.length === 0
+            ) {
+                moveBox[i].classList.remove("hide");
+                moveBox[i].classList.add("show");
+            } else {
+                moveBox[i].classList.remove("show");
+                moveBox[i].classList.add("hide");
+            }
+        }
+    }
+}
+filterBtns.addEventListener("click", filterFn);
+filterBtns.addEventListener("click", showlabel);
