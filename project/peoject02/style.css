@@ -53,3 +53,22 @@ img:hover {
     padding: 5px;
     font-size: 12px;
 }
+
+.move-box.hide {
+    display: none;
+}
+
+.move-box.show {
+    /* display: block; */
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -384,34 +384,34 @@ function filterFn(event) {
 }
 filterBtns.addEventListener("click", filterFn);
 
-// function showlabel(event) {
-//     let activeBtns = filterBtns.querySelectorAll(".active");
-//     let filterValues = [];
-//     activeBtns.forEach((btn) => {
-//         filterValues.push(btn.getAttribute("data-filter"));
-//     });
+function showlabel(event) {
+    let activeBtns = filterBtns.querySelectorAll(".active");
+    let filterValues = [];
+    activeBtns.forEach((btn) => {
+        filterValues.push(btn.getAttribute("data-filter"));
+    });
 
 
-//     let labels = document.querySelectorAll('.label .selectedlabel');
+    let labels = document.querySelectorAll('.label .selectedlabel');
 
-//     console.log(labels.length);
+    console.log(labels.length);
 
-//     let counter = 0;
-//     for (let i = 0; i < 9; i++) {
+    let counter = 0;
+    for (let i = 0; i < 9; i++) {
 
-//         if (filterValues.includes(labels[i].getAttribute("data-filter"))) {
+        if (filterValues.includes(labels[i].getAttribute("data-filter"))) {
 
-//             labels[i].style.display = 'inline';
-//             console.log(labels[i].getAttribute("data-filter") + labels[i].style.display);
-//             counter++;
+            labels[i].style.display = 'inline';
+            console.log(labels[i].getAttribute("data-filter") + labels[i].style.display);
+            counter++;
 
-//         } else {
-//             labels[i].style.display = 'none';
-//         }
+        } else {
+            labels[i].style.display = 'none';
+        }
 
-//     }
+    }
 
-//     console.log(counter);
+    console.log(counter);
 
-// }
-// filterBtns.addEventListener("click", showlabel);
+}
+filterBtns.addEventListener("click", showlabel);
