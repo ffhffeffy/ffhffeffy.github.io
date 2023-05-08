@@ -17,7 +17,8 @@ body {
     display: flex;
     flex-direction: column;
     max-height: 100vh;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .heading {
@@ -25,6 +26,7 @@ body {
     flex-direction: column;
     height: 40%;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .filters {
@@ -89,6 +91,7 @@ h4 {
 .image-box {
     height: 100%;
     width: 100%;
+    padding-bottom: 0px;
     padding-bottom: 10px;
     position: relative;
 }
@@ -140,21 +143,22 @@ img:hover {
 .filter-btn.active::after {
     content: 'x';
     position: absolute;
-    top: 16px;
+    top: 13px;
     left: 96px;
-    font-size: 25px;
+    font-size: 18px;
     margin-left: 10px;
     transform: translate(-50%, -50%);
-    font: weight 10px;
+    font: weight 6px;
     ;
     color: black;
 
 }
 
-.selectedlabel {
+.label {
+    padding: 20px
+}
 
-    width: auto;
-    height: auto;
+.selectedlabel {
     border: none;
     transition-timing-function: ease-in;
     transition-delay: 0.02s;
@@ -162,15 +166,12 @@ img:hover {
     text-align: center;
     cursor: pointer;
     justify-content: center;
-    margin-right: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    min-width: 8em;
-    height: auto;
-    padding: 0.7em;
-    background-color: #DBB825;
-    color: white;
-    border-radius: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0.551);
+    color: #0a2c38;
+    font-size: 14px;
+    /* border-radius: 24px; */
 }
 
 
