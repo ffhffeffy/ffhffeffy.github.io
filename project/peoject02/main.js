@@ -227,6 +227,35 @@ function renderCeramicsToPage(ceramics) {
         let image = document.createElement("img");
         image.setAttribute("src", ceramics[i].image);
         list_item.appendChild(image);
+        image.setAttribute("title", ceramics[i].info); // set the title attribute
+
+        image.addEventListener('mouseover', (event) => {
+            let tooltip = document.createElement("div");
+            tooltip.classList.add('tooltip');
+            tooltip.style.position = "absolute";
+            let imageRect = image.getBoundingClientRect();
+            tooltip.style.top = `${imageRect.top + imageRect.height + 10}px`;
+            tooltip.style.left = `${imageRect.left}px`;
+            tooltip.style.backgroundColor = "white";
+            tooltip.style.padding = "10px";
+            tooltip.textContent = ceramics[i].info;
+            document.body.appendChild(tooltip);
+        });
+
+        image.addEventListener('mouseout', () => {
+            let tooltip = document.querySelector('.tooltip');
+            if (tooltip) {
+                tooltip.parentNode.removeChild(tooltip);
+            }
+        });
+
+        // add mouseout event listener to image
+        image.addEventListener('mouseout', () => {
+            let tooltip = document.querySelector('.tooltip');
+            if (tooltip) {
+                tooltip.parentNode.removeChild(tooltip);
+            }
+        });
 
         imageBox.appendChild(list_item);
     }

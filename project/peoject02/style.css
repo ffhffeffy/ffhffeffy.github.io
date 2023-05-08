@@ -36,5 +36,5 @@ img {
 }
 
 img:hover {
-    z-index: 50;
+    z-index: 99;
 }
