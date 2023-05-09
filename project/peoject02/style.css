@@ -171,12 +171,13 @@ h4 {
     content: 'x';
     position: absolute;
     top: 13px;
-    left: 96px;
+    left: 100%;
+    margin-right: 5px;
+    /* right: -10px; */
     font-size: 18px;
     margin-left: 10px;
     transform: translate(-50%, -50%);
     font: weight 6px;
-    ;
     color: black;
 
 }
@@ -203,7 +204,7 @@ h4 {
 
 
 .selectedlabel:hover {
-    background-color: black;
+    background-color: #0a2c38;
     color: white;
     border-radius: 24px;
 
