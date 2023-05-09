@@ -24,9 +24,27 @@ body {
 .heading {
     display: flex;
     flex-direction: column;
-    height: 40%;
+    height: 30%;
     width: 100%;
     padding-bottom: 20px;
+}
+
+.image-box {
+    height: 50%;
+    width: 100%;
+    top: -80px;
+    /* bottom: -50px; */
+    position: relative;
+}
+
+img {
+    width: 200px;
+    transition: z-index 0.5s ease-out;
+    /* smooth transition effect */
+}
+
+img:hover {
+    z-index: 99;
 }
 
 .filters {
@@ -112,24 +130,6 @@ a:hover {
 
 h4 {
     padding-right: 30px;
-}
-
-.image-box {
-    height: 70%;
-    width: 100%;
-    padding-top: 0px;
-    padding-bottom: 10px;
-    position: relative;
-}
-
-img {
-    width: 200px;
-    transition: z-index 0.5s ease-out;
-    /* smooth transition effect */
-}
-
-img:hover {
-    z-index: 99;
 }
 
 .tooltip {
